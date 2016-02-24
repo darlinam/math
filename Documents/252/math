@@ -1,0 +1,27 @@
+#!/usr/bin/env node
+//shebang
+
+//get argument values
+var op = process.argv[2], // the operator for the math (= assignment)
+	a = +process.argv[3], // the first operand
+	b = +process.argv[4]; // the second operand
+
+//== comparison
+if (op == "add") {
+	console.log(a + b);
+}
+else if (op == "subtract") {
+	console.log(a - b);
+}
+
+else if (op == "multiply") {
+	console.log(a * b);
+}
+
+else if (op == "divide" && b == 0) {
+	console.log("Invalid");
+}
+
+else {
+	console.log(a / b)
+}
